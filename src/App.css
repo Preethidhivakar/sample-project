@@ -6,6 +6,8 @@
 
   
 }
+
+
 .head {
   font-family: sans-serif;
   text-align: center;
@@ -49,13 +51,13 @@
   text-align: center;
 }
 .mov-rel{
-  color:red;
+  color:rgb(255, 0, 234);
 }
 .mov-rat{
-  color:red;
+  color:rgb(255, 0, 234);
 }
 .mov-sum{
-  color:red;
+  color:rgb(255, 0, 234);
 }
 .link{
   text-align: center;
