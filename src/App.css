@@ -29,6 +29,7 @@
     height: 927px;
     width: 100%;
     margin-left: 0px;
+
 }
 .star {
   text-align:center;
@@ -36,7 +37,7 @@
 
 .movie-items{
   display: flex;
-  height: 884px;
+  height: 943px;
   width: 465px;
     flex-direction: column;
     border: 2px ssolid black;
@@ -61,4 +62,31 @@
 }
 .link{
   text-align: center;
+}
+
+.like-dislike-buttons{
+  display:flex;
+  gap: 5px;
+  align-items: flex-end;
+  margin-right: 10px;;
+
+}
+
+.like-dislike-buttons>button{
+  font: 16px;
+}
+.but{
+  width:130px;
+  margin-left:140px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  
+
 }

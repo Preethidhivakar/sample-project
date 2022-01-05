@@ -1,4 +1,5 @@
 import "./App.css";
+import {useState} from "react";
 
 export default function App() {
   let movie = [
@@ -11,7 +12,7 @@ export default function App() {
       download:"Download",
 
       summary:
-        "When their kingdom becomes trapped in perpetual winter, fearless Anna (Kristen Bell) joins forces with mountaineer Kristoff (Jonathan Groff) and his reindeer sidekick to find Anna's sister, Snow Queen Elsa (Idina Menzel), and break her icy spell. Although their epic journey leads them to encounters with mystical trolls, a comedic snowman (Josh Gad), harsh conditions, and magic at every turn, Anna and Kristoff bravely push onward in a race to save their kingdom from winter's cold grip."
+        "When their kingdom becomes trapped in perpetual winter, fearless Anna (Kristen Bell) joins forces with mountaineer Kristoff (Jonathan Groff) and his reindeer sidekick to find Anna's sister, Snow Queen Elsa (Idina Menzel), and break her icy spell. Although their epic journey leads them to encounters with mystical trolls, a comedic snowman (Josh Gad), harsh conditions, and magic at every turn, Anna and Kristoff bravely push onward in a race to save their kingdom ."
     },
     {
       name: "Wall-E",
@@ -80,11 +81,45 @@ export default function App() {
           dow={download}
         />
       ))}
+     
+     
     </div>
   );
 }
+
+
+function Counter(){
+  const[like,setLike]=useState(10);
+  const[dislike,setDislike]=useState(10);
+  return(
+    <div className="like-dislike-buttons">
+     < button onClick={()=>setLike(like+1)}>👍{like}</button>
+     < button onClick={()=>setDislike(dislike-1)}>👎{dislike}</button>
+        
+     
+    </div>
+  );
+     }
+
+
+  //   function Show(){
+  //     const [hidden, setHidden] = useState(false);
+  //     return (
+  //       <div className="but">
+          
+  //        {!hidden && <button onClick={() => setHidden(true)}>{sum}</button>}
+  //      </div>
+  //    );
+  //  }
+    
+
+
+
 function List({ Poster, pic, sum, released, rat ,dow}) {
+  
   const styles={ color: rat >= 8.5 ? "teal" : "crimson"};
+  const [display, setDisplay] = useState(false);
+  
   return (
   
       <div className="movie-items">
@@ -92,8 +127,24 @@ function List({ Poster, pic, sum, released, rat ,dow}) {
       <img className="picture1" src={pic} alt="Poster" />
       <p className="para1"><span className="mov-rel">Release year -</span>{released}</p>
       <p  className="star" style={styles}><span className="mov-rat">Rating:</span>{rat}</p>
-      <a className="link" href="Download" target="blank">{dow}</a>
-      <p className="para"><span className="mov-sum">Movie Summary :</span>{sum}</p>
+      <a className="link" href="Download" target="blank">{dow}</a><br></br>
+      <Counter/>
+
+      
+      {/* <button onClick={Show}>Toggle summary
+      </button> */}
+      
+      <button className="but" onClick={()=>setDisplay(!display)}> Summary</button>
+      {
+        display?<p className="para"><span className="mov-sum">Movie Summary :</span>{sum}</p>:null
+      }
+
+
+      {/* <p className="para"><span className="mov-sum">Movie Summary :</span></p> */}
+
+      {/* <Show/> */}
     </div>
   );
 }
+
+
