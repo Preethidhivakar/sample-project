@@ -1,8 +1,8 @@
 
 .picture1 {
-  width: 406px;
-  height: 419px;
-  margin: 1rem;
+  width: 373px;
+    height: 396px;
+ 
 
   
 }
@@ -10,46 +10,51 @@
 
 .head {
   font-family: sans-serif;
-  text-align: center;
-  font-size: x-large;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 24px;
 }
 
 .para1 {
   font-family: sans-serif;
-  text-align: center;
-  text-decoration-color: rgb(25, 0, 255);
+    
+    margin-top: -5px;
+    margin-left: 10px;
+    text-decoration-color: rgb(25, 0, 255);
 }
 .movielist {
   display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* align-items: center; */
     /* justify-content: space-around; */
     flex-wrap: wrap;
     margin-top: 2rem;
     height: 927px;
-    width: 100%;
+    width: 409px;
     margin-left: 0px;
 
 }
 .star {
-  text-align:center;
+  margin-top: -38px;
+    margin-left: 238px;
 }
 
 .movie-items{
   display: flex;
   height: 943px;
-  width: 465px;
+  width: 373px;
     flex-direction: column;
+    flex-wrap: wrap;
     border: 2px ssolid black;
     border: 2px solid black;
     margin-left: 2rem;
     margin-top: 10px;
-    background-color: rgb(71, 231, 218);
+    /* background-color: rgb(71, 231, 218); */
 }
   
 .para{
   margin-left:2px;
-  text-align: center;
+  /* text-align: center; */
 }
 .mov-rel{
   color:rgb(255, 0, 234);
@@ -61,32 +66,84 @@
   color:rgb(255, 0, 234);
 }
 .link{
-  text-align: center;
+  margin-left: 10px;
+  margin-top:12px;
+  width:100px;
 }
 
 .like-dislike-buttons{
-  display:flex;
-  gap: 5px;
-  align-items: flex-end;
-  margin-right: 10px;;
+  margin-left: 261px;
+    margin-top: -32px;
 
 }
 
 .like-dislike-buttons>button{
   font: 16px;
 }
-.but{
-  width:130px;
-  margin-left:140px;
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  /* margin: 4px 2px; */
-  
 
+.cd{
+  margin-left: 132px;
+  margin-top: 25px;
+
+}
+.cd1{
+  margin-left: -91px;
+    margin-right: 35px;
+    background-color:cyan;
+}
+
+.cl{
+  margin-top:19px;;
+}
+.cool{
+  display: flex;
+  height: 943px;
+  width: 373px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px ssolid black;
+    border: 2px solid black;
+    margin-left: 2rem;
+    margin-top: 10px;
+    /* background-color: rgb(71, 231, 218); */
+
+
+}
+.picture{
+  width: 373px;
+    height: 396px;
+
+}
+.text{
+  font-family: sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 24px;
+}
+.yr{
+  font-family: sans-serif;
+    
+    margin-top: -5px;
+    margin-left: 10px;
+    text-decoration-color: rgb(25, 0, 255);
+
+}
+
+.bo{
+
+  border-radius: 20px;
+    margin-top: 272px;
+    margin-left: 158px;
+
+}
+.card{
+  display: flex;
+  gap:2px;
+}
+.card1{
+  margin-left: 21px;
+    height: 48px;
+    /* background-color: pink; */
+    /* gap: 2px; */
+    margin-top: 26px
 }
