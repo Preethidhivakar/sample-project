@@ -183,9 +183,9 @@ function Counter(){
   return(
     <div className="like-dislike-buttons">
       <Tooltip open={open} onClose={handleClose} onOpen={handleOpen} title="Like">
-     < button onClick={()=>setLike(like+1)}>👍{like}</button></Tooltip>
+     < Button onClick={()=>setLike(like+1)} color="error">👍{like}</Button></Tooltip>
      <Tooltip open={open} onClose={handleClose} onOpen={handleOpen} title="DisLike">
-     < button onClick={()=>setDislike(dislike-1)}>👎{dislike}</button></Tooltip>
+     < Button onClick={()=>setDislike(dislike-1)} color="error">👎{dislike}</Button></Tooltip>
         
      
     </div>
@@ -378,3 +378,12 @@ function List({ Poster, pic, sum, released, dow}) {
 // //input field
 
 
+// import Button from '@mui/material/Button';
+// export default function ColorButtons() {
+//   return (
+    
+//       <Button variant="outlined" color="error">
+//         Error
+//       </Button>
+//   )
+// }
