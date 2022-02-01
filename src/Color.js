@@ -2,7 +2,7 @@ import React from 'react';
 import "./App.css";
 import { useState } from "react";
 import TextareaAutosize from '@mui/material/TextareaAutosize';
-
+import Button from "@mui/material/Button";
 
 
 export default function Color(){
@@ -18,8 +18,8 @@ export default function Color(){
         placeholder="Enter a color"
         style={styles}
         onChange={(event) => setColor(event.target.value)} />
-      <button onClick={() => setColorList([...colorList, color])}>AddColor</button>
-      {colorList.map((clr) => (<ColorBox cool={clr} />))}
+      {colorList.map((clr) => (<ColorBox cool={clr} />))}<br></br>
+      <Button className='add-button' variant="outlined" onClick={() => setColorList([...colorList, color])}>AddColor</Button>
 
     </div>
   );
