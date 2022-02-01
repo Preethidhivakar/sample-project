@@ -37,6 +37,7 @@
 
 .movie-items{
     display: flex;
+    flex-direction: column;
     height: 943px;
     width: 373px;
     flex-direction: column;
@@ -151,7 +152,7 @@
 } */
 .route{
   display: flex;
-  background-color: rgb(136, 144, 151);
+  /* background-color: rgb(136, 144, 151); */
   
   justify-content:space-between;
 }
@@ -180,7 +181,7 @@ li {
   font-size:30px;
   float: left;
   display: block;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
