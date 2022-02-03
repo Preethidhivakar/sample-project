@@ -78,7 +78,7 @@ export default function App() {
       <ul  className="route">
         <div>
         <li>
-          <Link to="/Welcome">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/movie">Movie</Link>
@@ -93,6 +93,9 @@ export default function App() {
       </ul>
 
       <Switch>
+      <Route exact path="/">
+          <Welcome />
+          </Route>
         <Route path="/films">
           <Redirect to="/movie" />
 
@@ -106,9 +109,7 @@ export default function App() {
           <Color />
         </Route>
 
-        <Route path="/Welcome">
-          <Welcome />
-          </Route>
+        
 
           {/* <Route path="/Add">
           <Add /> */}
