@@ -65,7 +65,7 @@ body{
   color:rgb(255, 0, 234);
 }
 .mov-sum{
-  color: rgb(0 8 255);
+  color:red;
 }
 .link{
   margin-left: 10px;
@@ -99,7 +99,7 @@ body{
 .cd1{
   margin-left: -91px;
     margin-right: 35px;
-    background-color:cyan;
+    background-color:darkgray;
 }
 
 .cl{
